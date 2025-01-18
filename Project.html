@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/projectpage.css" />
+  <title>Hash Computing | project</title>
+
+  <style></style>
+</head>
+
+<body>
+  <section class="major-color py-5 position-relative container-fluid" style="height: 100vh">
+    <!-- Background Overlay with opacity -->
+    <div class="position-absolute top-0 left-0 right-0 bottom-0 \" style="
+          background-image: url('/assets/images/v1_121.png');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          opacity: 0.25;
+          z-index: 99999;
+        "></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md col-xlg-10 col-lg-10 col-md-12 m-auto bg-light navbar-styling">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="/imges/logo.svg" style="height: 70px" alt="Logo" />
+        </a>
+        <!-- Toggler Button for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link navbar-tabs-font active" aria-current="page" href="index.html"><b>Home</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-tabs-font" href="Project.html"><b>Projects</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-tabs-font"><b>Services</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-tabs-font"><b>About Us</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-tabs-font"><b>Contact Us</b></a>
+            </li>
+          </ul>
+          <div class="d-flex" role="search">
+            <button class="btn" type="submit"><b>Login</b></button>
+            <button class="btn major-color text-light" style="border-radius: 40px" type="submit">
+              <b>Sign Up</b>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container hero-content text-center text-light" style="margin-top: 8em">
+      <!-- Hero Content -->
+      <div class="pt-5 w-50 m-auto">
+        <h1 class="display-4 fw-bold">Our Projects</h1>
+        <p class="lead">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+          veniam rerum exercitationem reprehenderit eum aliquam a dicta
+          sapiente in dolor! Laboriosam, voluptate fugiat impedit similique
+          aperiam ab qui quam minima.
+        </p>
+        <div class="d-flex justify-content-center mt-4">
+          <input type="text" placeholder="Search for a project" class="form-control w-50 rounded-pill" />
+          <button class="btn btn-primary rounded-pill ms-2">Search</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent post section -->
+  <section>
+    <div class="recent-posts container-fluid">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Recent Posts</h2>
+        <div class="see-all">
+          <a href="#">See All</a>
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card major-color">
+            <div class="arrow-circle">&rarr;</div>
+            <div class="card-body">
+              <h5 class="card-title">Card Title</h5>
+              <p class="card-text">Short content for the first card.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card major-color">
+            <div class="arrow-circle">&rarr;</div>
+            <div class="card-body">
+              <h5 class="card-title">Card Title</h5>
+              <p class="card-text">
+                A bit more content for the second card to test height
+                alignment.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card major-color">
+            <div class="arrow-circle">&rarr;</div>
+            <div class="card-body">
+              <h5 class="card-title">Card Title</h5>
+              <p class="card-text">
+                Even more text here to see how all cards maintain the same
+                height despite varying content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination">
+        <span>1 Of 3</span>
+        <button>&rarr;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature project section -->
+  <section>
+    <div class="recent-posts container-fluid">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Featured Projects</h2>
+        <div class="see-all">
+          <a href="#">See All</a>
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card d-flex flex-column major-color">
+            <div class="arrow-circle">&rarr;</div>
+            <div class="card-body d-flex flex-column justify-content-end" style="height: 200px">
+              <h2 class="text-white card-title">Project 1</h2>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                fugiat velit delectus maxime doloremque ipsum voluptatum nisi
+                sint ea deleniti! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Natus, minima?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card d-flex flex-column major-color">
+            <div class="arrow-circle">&rarr;</div>
+            <div class="card-body d-flex flex-column justify-content-end" style="height: 200px">
+              <h2 class="text-white card-title">Project 2</h2>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eveniet deserunt ea atque ut ipsa maiores fugiat autem
+                nesciunt, architecto fuga! Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Commodi, reiciendis!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card d-flex flex-column major-color">
+            <div class="arrow-circle">&rarr;</div>
+            <div class="card-body d-flex flex-column justify-content-end" style="height: 200px">
+              <h2 class="text-white card-title">Project 3</h2>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Incidunt accusantium molestias asperiores dignissimos
+                accusamus, temporibus hic saepe fugiat! Voluptatum odit
+                eveniet aliquam minima velit aspernatur, id quas ab
+                perferendis corrupti?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination">
+        <span>1 Of 3</span>
+        <button>&rarr;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- All projects sections -->
+  <section class="major-color container-fluid" >
+    <div class="major-color py-5">
+      <div class="recent-posts major-color">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="text-white">Featured Projects</h2>
+          <div class="see-all">
+            <a href="#" class="text-decoration-none text-white">See All</a>
+          </div>
+        </div>
+        <!-- Filter Buttons -->
+        <div class="d-flex mb-4">
+          <button class="btn btn-light me-2">All</button>
+          <button class="btn btn-outline-light me-2">Cybersecurity</button>
+          <button class="btn btn-outline-light">IoT</button>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card custom-card">
+              <div class="card-body d-flex flex-column justify-content-end">
+                <h5 class="card-title">Project 1</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                  fugiat velit delectus maxime doloremque ipsum voluptatum
+                  nisi sint ea deleniti!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card custom-card">
+              <div class="card-body d-flex flex-column justify-content-end">
+                <h5 class="card-title">Project 2</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet deserunt ea atque ut ipsa maiores fugiat autem
+                  nesciunt, architecto fuga!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card custom-card">
+              <div class="card-body d-flex flex-column justify-content-end">
+                <h5 class="card-title">Project 3</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt accusantium molestias asperiores dignissimos
+                  accusamus, temporibus hic saepe fugiat!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card custom-card">
+              <div class="card-body d-flex flex-column justify-content-end">
+                <h5 class="card-title">Project 1</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                  fugiat velit delectus maxime doloremque ipsum voluptatum
+                  nisi sint ea deleniti!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card custom-card">
+              <div class="card-body d-flex flex-column justify-content-end">
+                <h5 class="card-title">Project 2</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet deserunt ea atque ut ipsa maiores fugiat autem
+                  nesciunt, architecto fuga!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card custom-card">
+              <div class="card-body d-flex flex-column justify-content-end">
+                <h5 class="card-title">Project 3</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt accusantium molestias asperiores dignissimos
+                  accusamus, temporibus hic saepe fugiat!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card custom-card">
+              <div class="card-body d-flex flex-column justify-content-end">
+                <h5 class="card-title">Project 1</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                  fugiat velit delectus maxime doloremque ipsum voluptatum
+                  nisi sint ea deleniti!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card custom-card">
+              <div class="card-body d-flex flex-column justify-content-end">
+                <h5 class="card-title">Project 2</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet deserunt ea atque ut ipsa maiores fugiat autem
+                  nesciunt, architecto fuga!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card custom-card">
+              <div class="card-body d-flex flex-column justify-content-end">
+                <h5 class="card-title">Project 3</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt accusantium molestias asperiores dignissimos
+                  accusamus, temporibus hic saepe fugiat!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center mt-4">
+          <button class="btn btn-outline-light">Load More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="" style="height: 100px"></section>
+</body>
+
+</html>

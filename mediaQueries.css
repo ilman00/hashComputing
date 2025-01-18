@@ -1,0 +1,56 @@
+@media screen and (min-width: 992px){
+    #section-2 > div > .row > .firs-card{
+        width: 38% !important;
+    }
+
+    #section-2 > div > .row > .second-card, .third-card{
+        width: 31%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .padding-top{
+        padding-top: 120px;
+    }
+
+    .section-height{
+        height: initial;
+    }
+
+    .person-img{
+        width: 115%;
+        max-width: 733px;
+        height: auto;
+    }
+    .fontBig{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .padding-top-0{
+        padding-top: 0;
+    }
+
+    .experties-card-style{
+        width: 47%;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .custom-w-100{
+        width: 100% !important;
+    }
+}
+
+@media screen and (min-width: 431px){
+    .w-60{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .width-for-solution{
+        width: 90% !important;
+        padding: 10px;
+    }
+}
