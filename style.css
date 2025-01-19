@@ -89,3 +89,30 @@ body{
     background-color: #02316790;
     height: inherit;
 }
+
+.carousel {
+    overflow: hidden;
+    /* width: 80%; */
+    margin: auto;
+    position: relative;
+    /* For button positioning */
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    /* Optional spacing */
+    gap: 10px;
+}
+
+.carousel-card {
+    min-width: calc(100% / 2);
+    /* Adjust based on how many cards you want to show */
+    box-sizing: border-box;
+    padding: 20px;
+    background: #f0f0f0;
+    margin: 0;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

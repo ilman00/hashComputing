@@ -418,13 +418,13 @@
     </section>
 
     <section class="major-color p-5">
-        <div class="container ">
+        <div class="container carousel">
             <div>
                 <h1 class="text-light">Our Client Review</h1>
 
             </div>
-            <div class="d-flex">
-                <div class="card ml-3 me-3 text-center" style="width: 28rem; height: fit-content;">
+            <div class="d-flex carousel-container">
+                <div class="card text-center carousel-card" style="width: 28rem; height: fit-content;">
                     <div class="card-body">
                         <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
                             architecto deserunt aperiam voluptate cupiditate temporibus fuga voluptas. Reiciendis
@@ -432,7 +432,61 @@
                         <h5 class="card-title text-dark">Card title</h5>
                     </div>
                 </div>
-                <div class="card ml-3 me-3 text-center" style="width: 28rem; height: fit-content;">
+                <div class="card  text-center carousel-card" style="width: 28rem; height: fit-content;">
+                    <div class="card-body">
+                        <p class="card-text text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
+                            asperiores quisquam illo debitis laborum similique quo, aut ad eligendi velit. Iusto id
+                            ipsam tempora eius consequatur rerum</p>
+                        <h5 class="card-title text-dark">Card title</h5>
+                    </div>
+                </div>
+
+                <div class="card text-center carousel-card" style="width: 28rem; height: fit-content;">
+                    <div class="card-body">
+                        <p class="card-text text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
+                            asperiores quisquam illo debitis laborum similique quo, aut ad eligendi velit. Iusto id
+                            ipsam tempora eius consequatur rerum</p>
+                        <h5 class="card-title text-dark">Card title</h5>
+                    </div>
+                </div>
+
+                <div class="card text-center carousel-card" style="width: 28rem; height: fit-content;">
+                    <div class="card-body">
+                        <p class="card-text text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
+                            asperiores quisquam illo debitis laborum similique quo, aut ad eligendi velit. Iusto id
+                            ipsam tempora eius consequatur rerum</p>
+                        <h5 class="card-title text-dark">Card title</h5>
+                    </div>
+                </div>
+
+                <div class="card text-center carousel-card" style="width: 28rem; height: fit-content;">
+                    <div class="card-body">
+                        <p class="card-text text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
+                            asperiores quisquam illo debitis laborum similique quo, aut ad eligendi velit. Iusto id
+                            ipsam tempora eius consequatur rerum</p>
+                        <h5 class="card-title text-dark">Card title</h5>
+                    </div>
+                </div>
+
+                <div class="card text-center carousel-card" style="width: 28rem; height: fit-content;">
+                    <div class="card-body">
+                        <p class="card-text text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
+                            asperiores quisquam illo debitis laborum similique quo, aut ad eligendi velit. Iusto id
+                            ipsam tempora eius consequatur rerum</p>
+                        <h5 class="card-title text-dark">Card title</h5>
+                    </div>
+                </div>
+
+                <div class="card text-center carousel-card" style="width: 28rem; height: fit-content;">
+                    <div class="card-body">
+                        <p class="card-text text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
+                            asperiores quisquam illo debitis laborum similique quo, aut ad eligendi velit. Iusto id
+                            ipsam tempora eius consequatur rerum</p>
+                        <h5 class="card-title text-dark">Card title</h5>
+                    </div>
+                </div>
+
+                <div class="card text-center carousel-card" style="width: 28rem; height: fit-content;">
                     <div class="card-body">
                         <p class="card-text text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
                             asperiores quisquam illo debitis laborum similique quo, aut ad eligendi velit. Iusto id
@@ -449,5 +503,64 @@
     <section style="height: 200px;"></section>
 
 </body>
+
+
+
+
+
+
+
+
+
+
+<script>
+     const carouselContainer = document.querySelector('.carousel-container');
+        const cards = document.querySelectorAll('.carousel-card');
+        // const prevButton = document.querySelector('.prev');
+        // const nextButton = document.querySelector('.next');
+
+        let currentIndex = 0;
+        const totalCards = cards.length;
+        const cardsToShow = 3; // Number of cards to show at once
+
+        function updateCarousel() {
+            const cardWidth = cards[0].offsetWidth; // Include padding and border
+            const gapWidth = parseInt(getComputedStyle(carouselContainer).gap || 0); // Include gap
+            const totalCardWidth = cardWidth + gapWidth; // Calculate total width per slot
+            const offset = -currentIndex * totalCardWidth; // Calculate offset
+            carouselContainer.style.transform = `translateX(${offset}px)`; // Slide
+        }
+
+        // nextButton.addEventListener('click', () => {
+        //     moveNext();
+        // });
+
+        // prevButton.addEventListener('click', () => {
+            // movePrev();
+        // });
+
+        function moveNext() {
+            currentIndex++;
+            if (currentIndex > totalCards - cardsToShow) {
+                currentIndex = 0; // Loop back to the first card
+            }
+            updateCarousel();
+        }
+
+        function movePrev() {
+            currentIndex--;
+            if (currentIndex < 0) {
+                currentIndex = totalCards - cardsToShow; // Loop to the last visible set of cards
+            }
+            updateCarousel();
+        }
+
+        // Automatically move to the next card every 2 seconds
+        setInterval(() => {
+            moveNext();
+        }, 2000);
+</script>
+
+
 
 </html>
