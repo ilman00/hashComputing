@@ -1,0 +1,7 @@
+.card {
+  background-color: #002855;
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 24em; /* Fix card height */
+}
