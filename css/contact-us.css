@@ -5,3 +5,9 @@
   position: relative;
   height: 24em; /* Fix card height */
 }
+
+@media screen and (max-width: 480px){
+  .aboutUsHeaderContent{
+    width: 95% !important; 
+  }
+}

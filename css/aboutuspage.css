@@ -145,3 +145,10 @@
   background-color: white;
   color: #002855;
 }
+
+
+@media screen and (max-width: 480px){
+  .aboutUsHeaderContent{
+    width: 95% !important; 
+  }
+}
